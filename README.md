@@ -76,13 +76,11 @@ MS-DOS起動
 #### 実際の作業
 
 1. 編集をかけたファイルの追加準備
- ##### 編集をかけた全ファイル
 ```
- git add .
+git add . //編集をかけた全ファイル
 ```
-##### 準備したいファイル名
 ```
-git add ***
+git add *** //準備したいファイル名
 ```
 
 2. 何が準備できたか確認をする
@@ -96,13 +94,11 @@ git commit -m "メッセージ（英語のほうがよい）"
 ```
 
 4. プッシュ
- ##### マスターの場合
 ```
-git push origin master
+git push origin master //マスターの場合
 ```
- ##### マスター以外
 ```
-git push origin iori
+git push origin iori //マスター以外
 ```
 
 ## コーディングルール
