@@ -78,23 +78,32 @@ MS-DOS起動
 1. 編集をかけたファイルの追加準備
  ##### 編集をかけた全ファイル
 ```
- git add . ```
+ git add .
+```
 ##### 準備したいファイル名
 ```
-git add *** ```
+git add ***
+```
 
 2. 何が準備できたか確認をする
 ```
- git status ```
+git status
+```
 
 3. コミットする
 ```  
-git commit -m "メッセージ（英語のほうがよい）" ```
+git commit -m "メッセージ（英語のほうがよい）"
+```
 
 4. プッシュ
+ ##### マスターの場合
 ```
-git push origin ブランチ名 ```
-
+git push origin master
+```
+ ##### マスター以外
+```
+git push origin iori
+```
 
 ## コーディングルール
 
