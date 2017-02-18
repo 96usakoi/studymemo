@@ -101,6 +101,15 @@ git push origin master //マスターの場合
 git push origin iori //マスター以外
 ```
 
+(５)プル
+```
+git pull origin master //マスターの場合
+```
+```
+git pull origin iori //マスター以外
+```
+
+
 ## コーディングルール
 
 srcの中身触る
