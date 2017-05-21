@@ -1,77 +1,41 @@
 # studymemo
-Winに開発環境整える
 
-## 環境整える
-
-### インストールする物
-- git
-- xampp
-- nodist
-- node.js
-- gulp
-- WordPress
-- Atom
-
-***
-#### nodist
-- Nodeのバージョン管理ツール
-- 今回 ver4.4.7
-- [参照：nodistでNode.jsをバージョン管理](http://qiita.com/satoyan419/items/56e0b5f35912b9374305)
-
-
-#### gulp
-gulpが入ってない場合はインストール
-##### グローバルの設定
-``` npm install -g gulp ```
--g（グローバル：全体で使えるようにする。-g無しだと今いる階層にインストール）
-
-##### ローカルディレクトリの設定
-WordPressのthemesの開発用テーマの中にpackade.jsonがある場合
-
-``` npm install ```
-
-（テーマ名＞node_modulesの中身がインストールされる）
-
-##### gulpの設定
-
-``` gulp/config.default.js ```
-
-修正する箇所
-```
-proxy: 'http://hsa.localhost/', //自身のローカル環境に合わせて書き換えてください。
-```
-（人それぞれ開発環境のURLが異なっていても見れるように偽装）
-
-## Gitの使い方
+# Gitの使い方
 開発ディレクトリ
 
-例）
+- win
+
+  例）
 ``` C:\xampp\htdocs ```
 
-MS-DOS起動
+  MS-DOS起動
 
-``` cmd ```
+  ``` cmd ```
 
-フォルダ移動
+- mac
 
-``` cd ***/*** ```
+  Alfred起動 ``` control + space iTerm検索　```
 
-### gitコマンド
+  開発フォルダへ移動 ``` htdocs ```
+
+  自分のいる場所確認 ``` pwd ```
+
+## gitコマンド
 クローン
 
-``` git clone URL ```
+  ``` git clone URL ```
 
 ブランチ作成、移動
 
-``` git checkout -b *** ```
+  ``` git checkout -b *** ```
 
 ブランチ切り替え
 
-``` git checkout ブランチ名 ```
+  ``` git checkout ブランチ名 ```
 
 ブランチの確認
 
-``` git branch ```
+  ``` git branch ```
 
 #### 実際の作業
 
@@ -110,6 +74,10 @@ git pull origin iori //マスター以外
 ```
 
 
+add　→　status　→　commit →　push origin ***
+
+
+
 ## コーディングルール
 
 srcの中身触る
@@ -144,3 +112,48 @@ CSSのクラス名
 
 ### マークダウンプレビュー
 ``` Ctrl + Shift + m ```
+
+
+
+# Winに開発環境整える
+
+## 環境整える
+
+### インストールする物
+- git
+- xampp
+- nodist
+- node.js
+- gulp
+- WordPress
+- Atom
+
+***
+#### nodist
+- Nodeのバージョン管理ツール
+- 今回 ver4.4.7
+- [参照：nodistでNode.jsをバージョン管理](http://qiita.com/satoyan419/items/56e0b5f35912b9374305)
+
+
+#### gulp
+gulpが入ってない場合はインストール
+##### グローバルの設定
+``` npm install -g gulp ```
+-g（グローバル：全体で使えるようにする。-g無しだと今いる階層にインストール）
+
+##### ローカルディレクトリの設定
+WordPressのthemesの開発用テーマの中にpackade.jsonがある場合
+
+``` npm install ```
+
+（テーマ名＞node_modulesの中身がインストールされる）
+
+##### gulpの設定
+
+``` gulp/config.default.js ```
+
+修正する箇所
+```
+proxy: 'http://000.localhost/', //自身のローカル環境に合わせて書き換えてください。
+```
+（人それぞれ開発環境のURLが異なっていても見れるように偽装）
