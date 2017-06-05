@@ -37,6 +37,10 @@
 
   ``` git branch ```
 
+
+
+
+
 #### 実際の作業
 
 (1)編集をかけたファイルの追加準備
@@ -75,6 +79,14 @@ git pull origin iori //マスター以外
 
 
 add　→　status　→　commit →　push origin ***
+
+## フォークしてプルリク
+
+- Githubの管理画面からフォーク
+- git checkout -b branchname
+- git add .
+- git status
+- git commit -am ""　コメントと変更した箇所がわかる
 
 
 
@@ -157,3 +169,8 @@ WordPressのthemesの開発用テーマの中にpackade.jsonがある場合
 proxy: 'http://000.localhost/', //自身のローカル環境に合わせて書き換えてください。
 ```
 （人それぞれ開発環境のURLが異なっていても見れるように偽装）
+
+
+
+git clone
+npm install
