@@ -87,6 +87,7 @@ add　→　status　→　commit →　push origin ***
 - git add .
 - git status
 - git commit -am ""　コメントと変更した箇所がわかる
+- git push origin branchname
 
 
 
